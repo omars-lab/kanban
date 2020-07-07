@@ -1,2 +1,3 @@
-# kanban
-A simple terminal based kanban app!
+# Kanban
+> *A simple terminal based kanban app!*
+
