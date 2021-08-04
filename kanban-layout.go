@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/gdamore/tcell"
 	"github.com/rivo/tview"
 )
@@ -27,7 +25,7 @@ func l(title string, app *tview.Application) *tview.List {
 
 func configureList(app *tview.Application, previousList *tview.List, list *tview.List, nextList *tview.List) {
 	list.SetInputCapture(func(event *tcell.EventKey) *tcell.EventKey {
-		fmt.Println(event.Rune())
+		// fmt.Println(event.Rune())
 
 		if event.Modifiers()&tcell.ModShift != 0 {
 			if event.Key() == tcell.KeyRight {
